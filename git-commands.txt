@@ -1,0 +1,206 @@
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~
+$ mkdir monorepo
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~
+$ cd monorepo
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo
+$ git clone https://github.com/medinasheriff/monorepo.git
+Cloning into 'monorepo'...
+warning: You appear to have cloned an empty repository.
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo
+$ pwd
+/c/Users/DELL/monorepo
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo
+$ cd monorepo
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo (main)
+$ touch README.md
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo (main)
+$ code .
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo (main)
+$ touch LICENSE
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo (main)
+$ code .
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo (main)
+$ touch .gitignore
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo (main)
+$ code .
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo (main)
+$ git add . && git commit -m "Initial commit"
+[main (root-commit) 4870a4b] Initial commit
+ 3 files changed, 43 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 LICENSE
+ create mode 100644 README.md
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo (main)
+$ pwd
+/c/Users/DELL/monorepo/monorepo
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo (main)
+$ mkdir Backend
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo (main)
+$ cd Backend
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/Backend (main)
+$ touch .gitkeep
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/Backend (main)
+$ git add . && git commit -m "Add empty backend directory"
+[main 99d0c1e] Add empty backend directory
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Backend/.gitkeep
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/Backend (main)
+$ git push origin main
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (9/9), 1.46 KiB | 373.00 KiB/s, done.
+Total 9 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/medinasheriff/monorepo.git
+ * [new branch]      main -> main
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/Backend (main)
+$ cd ..
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo (main)
+$ git checkout -b frontend-layout
+Switched to a new branch 'frontend-layout'
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo (frontend-layout)
+$ mkdir Frontend
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo (frontend-layout)
+$ cd Frontend
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/Frontend (frontend-layout)
+$ mkdir src
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/Frontend (frontend-layout)
+$ cd src
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/Frontend/src (frontend-layout)
+$ mkdir components
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/Frontend/src (frontend-layout)
+$ cd components
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/Frontend/src/components (frontend-layout)
+$ touch .gitkeep
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/Frontend/src/components (frontend-layout)
+$ cd ..
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/Frontend/src (frontend-layout)
+$ mkdir containers
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/Frontend/src (frontend-layout)
+$ cd containers
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/Frontend/src/containers (frontend-layout)
+$ touch .gitkeep
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/Frontend/src/containers (frontend-layout)
+$ git add . && git commit -m "chore: add components and containers directory to frontend"
+[frontend-layout 6036f18] chore: add components and containers directory to frontend
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Frontend/src/containers/.gitkeep
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/Frontend/src/containers (frontend-layout)
+$ cd ..
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/Frontend/src (frontend-layout)
+$ touch index.js
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/Frontend/src (frontend-layout)
+$ git add . && git commit -m "add content dynamically to page via JavaScript"
+[frontend-layout 91b3dcf] add content dynamically to page via JavaScript
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Frontend/src/components/.gitkeep
+ create mode 100644 Frontend/src/index.js
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/Frontend/src (frontend-layout)
+$ code .
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/Frontend/src (frontend-layout)
+$ git push origin frontend-layout
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (9/9), 779 bytes | 259.00 KiB/s, done.
+Total 9 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'frontend-layout' on GitHub by visiting:
+remote:      https://github.com/medinasheriff/monorepo/pull/new/frontend-layout
+remote:
+To https://github.com/medinasheriff/monorepo.git
+ * [new branch]      frontend-layout -> frontend-layout
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/Frontend/src (frontend-layout)
+$ git merge frontend-layout
+Already up to date.
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/Frontend/src (frontend-layout)
+$ cd ..
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/Frontend (frontend-layout)
+$ mkdir public
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/Frontend (frontend-layout)
+$ cd public
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/Frontend/public (frontend-layout)
+$ touch index.html
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/Frontend/public (frontend-layout)
+$ code .
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/Frontend/public (frontend-layout)
+$ git add . && git commit -m "add index.html page"
+[frontend-layout d591836] add index.html page
+ 1 file changed, 10 insertions(+)
+ create mode 100644 Frontend/public/index.html
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/Frontend/public (frontend-layout)
+$ git push origin frontend-layout
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 510 bytes | 255.00 KiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/medinasheriff/monorepo.git
+   91b3dcf..d591836  frontend-layout -> frontend-layout
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/Frontend/public (frontend-layout)
+$ cd ..
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/Frontend (frontend-layout)
+$ cd ..
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo (frontend-layout)
+$ git checkout -b commands
+Switched to a new branch 'commands'
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo (commands)
+$ touch git-commands.txt
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo (commands)
+$ code .
